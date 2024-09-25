@@ -3,6 +3,7 @@ package io.learn.steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class LoginSteps {
 
@@ -19,5 +20,6 @@ public class LoginSteps {
     @Then("the user should be redirected to the dashboard")
     public void the_user_should_be_redirected_to_the_dashboard() {
         System.out.println("User should be redirected to the dashboard");
+//        Assert.assertEquals(1, 2);
     }
 }
