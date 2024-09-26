@@ -39,4 +39,22 @@ public class LoginSteps {
         // Code to verify the user is redirected to the correct page
         System.out.println("Page is:" +page);
     }
+
+    @When("the user clicks the {string} button")
+    public void the_user_clicks_the_button(String button) {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("the user clicks the "+ button +" button");
+    }
+
+    @Given("the user is logged in")
+    public void the_user_login() {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println("the user is logged in");
+    }
+
+    @Then("the user should be redirected to the {string} page")
+    public void verifyNavigatingPage(String page) {
+        // Code to verify the user is redirected to the correct page
+        System.out.println("Page is:" +page);
+    }
 }
