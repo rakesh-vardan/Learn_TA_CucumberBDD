@@ -22,4 +22,21 @@ public class LoginSteps {
         System.out.println("User should be redirected to the dashboard");
 //        Assert.assertEquals(1, 2);
     }
+
+    @Given("the user enters {string} as the username and {string} as the password")
+    public void userEntersCredentials(String username, String password) {
+        // Code to input the username and password
+        System.out.println(username +" : "+ password );
+    }
+
+    @When("the user clicks the login button")
+    public void the_user_clicks_the_login_button() {
+        System.out.println("the user clicks the login button");
+    }
+
+    @Then("the user should be redirected to the {string}")
+    public void verifyRedirectPage(String page) {
+        // Code to verify the user is redirected to the correct page
+        System.out.println("Page is:" +page);
+    }
 }
